@@ -1,5 +1,8 @@
 <header>
     <div class="logo">
+        <% if(orgLogo && theme.img_logo) { %>
+            <img src="<%- tmeme.img_logo %>" class="org-logo" />
+        <% } %>
         <a href="<%- config.root %>"><i class="logo-icon fa <%- logoIcon ? logoIcon : theme.fa_logo %>" aria-hidden="true"></i></a>
         <% if(headerTitle) { %>
             <h1 id="main-title" class="title"><%- headerTitle %></h1>
